@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Red</title>
+    <link rel="stylesheet" href="../css/Style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../Index.html">Indice</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Laboratorio de Hardware
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./VPN.html">VPN</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./Dispositivos.html">Dispositivos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./Protocolos de comunicacion.html">Protocolos de comunicacion</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./Comandos.html">Comandos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./Protocolos de enrutamiento.html">Protocolos de enrutamiento</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="Texto">
+        <h1>Protocolos de enrutamiento</h1>
+        <p>
+          <h2>Que es?</h2>
+          <br>
+          El enrutamiento es el proceso de selección de rutas en cualquier red. Una red de computación está formada por muchas máquinas, llamadas nodos, y rutas o enlaces que conectan dichos nodos. La comunicación entre dos nodos en una red interconectada se puede producir a través de muchas rutas diferentes. El enrutamiento es el proceso de seleccionar la mejor ruta mediante algunas reglas predeterminadas.
+          <br>
+          <br>
+          <h2>¿Por qué es importante el enrutamiento?</h2>
+          <br>
+          El enrutamiento genera eficiencia en la comunicación de la red. Los errores en la comunicación de la red provocan largos tiempos de espera para que las páginas del sitio web carguen para los usuarios. También puede provocar que los servidores de sitios web se bloqueen porque no pueden gestionar una gran cantidad de usuarios. El enrutamiento ayuda a minimizar las fallas de la red al administrar el tráfico de datos para que una red pueda usar la mayor cantidad posible de su capacidad sin crear congestión.
+          <br>
+          <br>
+          <h2>¿Qué es un enrutador?</h2>
+          <br>
+          Un enrutador es un dispositivo de red que conecta los dispositivos de computación y las redes a otras redes. Los enrutadores cumplen principalmente tres funciones principales.
+          <br>
+          <br>
+          Determinación de la ruta
+          <br>
+          <br>
+          Un enrutador determina la ruta que toman los datos cuando se mueven de un origen a un destino. Intenta encontrar la mejor ruta al analizar las métricas de la red, como el retraso, la capacidad y la velocidad.
+          <br>
+          <br>
+          Reenvío de datos
+          Un enrutador reenvía los datos al siguiente dispositivo en la ruta seleccionada para llegar finalmente a su destino. El dispositivo y el enrutador pueden estar en la misma red o en redes diferentes.
+          <br>
+          <br>
+          Balanceador de carga
+          A veces, el enrutador puede enviar copias del mismo paquete de datos a través de varias rutas diferentes. Lo hace para reducir los errores debidos a las pérdidas de datos, crear redundancia y gestionar el volumen de tráfico. 
+          <br>
+          <br>
+          <h2>¿Cómo funciona el enrutamiento?</h2>
+          <br>
+          Los datos se mueven a lo largo de cualquier red en forma de paquetes de datos. Cada paquete de datos tiene un encabezado que contiene información sobre el destino previsto del paquete. Cuando un paquete viaja a su destino, varios enrutadores pueden dirigirlo varias veces. Los enrutadores realizan este proceso millones de veces por segundo con millones de paquetes.
+          <br>
+          <br>
+          Cuando llega un paquete de datos, el enrutador primero busca su dirección en una tabla de enrutamiento. Esto es similar a cuando un pasajero consulta el horario de un autobús para encontrar la mejor ruta de autobús a su destino. Luego, el enrutador reenvía o mueve el paquete hacia el siguiente punto de la red.
+          <br>
+          <br>
+          Por ejemplo, cuando visita un sitio web desde una computadora de la red de la oficina, los paquetes de datos van primero al enrutador de la red de la oficina. El enrutador busca el paquete de encabezado y determina el destino del paquete. A continuación, busca en su tabla interna y reenvía el paquete, ya sea al siguiente enrutador o a otro dispositivo, como una impresora, dentro de la propia red.
+          <br>
+          <br>
+          <h2>¿Cuáles son los tipos de enrutamiento?</h2>
+          <br>
+          Existen dos tipos diferentes de enrutamiento, que se basan en la forma en que el enrutador crea sus tablas de enrutamiento:
+          <br>
+          <br>
+          Enrutamiento estático
+          <br>
+          En el enrutamiento estático, un administrador de red utiliza tablas estáticas para configurar y seleccionar manualmente las rutas de red. El enrutamiento estático es útil en situaciones en las que se espera que el diseño o los parámetros de la red permanezcan constantes.
+          <br>
+          <br>
+          La naturaleza estática de esta técnica de enrutamiento conlleva los inconvenientes esperados, como la congestión de la red. Si bien los administradores pueden configurar rutas de respaldo en caso de que se produzca un error en un enlace, el enrutamiento estático generalmente disminuye la adaptabilidad y la flexibilidad de las redes, lo que resulta en un rendimiento limitado de la red.
+          <br>
+          <br>
+          Enrutamiento dinámico
+          <br>
+          En el enrutamiento dinámico, los enrutadores crean y actualizan las tablas de enrutamiento en tiempo de ejecución según las condiciones reales de la red. Intentan encontrar la ruta más rápida desde el origen hasta el destino mediante un protocolo de enrutamiento dinámico, que es un conjunto de reglas que crean, mantienen y actualizan la tabla de enrutamiento dinámico.
+          <br>
+          <br>
+          La mayor ventaja del enrutamiento dinámico es que se adapta a las condiciones cambiantes de la red, incluidos el volumen de tráfico, el ancho de banda y las fallas de la red.
+          <br>
+          <br>
+          <h2>¿Cuáles son los principales protocolos de enrutamiento?</h2>
+          <br>
+          Un protocolo de enrutamiento es un conjunto de reglas que especifican cómo los enrutadores identifican y reenvían paquetes a lo largo de una ruta de red. Los protocolos de enrutamiento se agrupan en dos categorías distintas: protocolos de puerta de enlace interior y protocolos de puerta de enlace exterior.
+          <br>
+          <br>
+          Los protocolos de puerta de enlace interior funcionan mejor dentro de un sistema autónomo, una red controlada administrativamente por una sola organización. Los protocolos de puerta de enlace externa gestionan mejor la transferencia de información entre dos sistemas autónomos.
+          <br>
+          <br>
+          Protocolos de puerta de enlace interior
+          Estos protocolos evalúan el sistema autónomo y toman decisiones de enrutamiento en función de diferentes métricas, como las siguientes:
+          <br>
+          <br>
+          Recuentos de saltos o la cantidad de enrutadores entre el origen y el destino
+          Retraso o tiempo necesario para enviar los datos desde el origen al destino
+          Ancho de banda o la capacidad de enlace entre el origen y el destino
+          A continuación se indican algunos ejemplos de protocolos de puerta de enlace interior.
+          <br>
+          <br>
+          Protocolo de información de enrutamiento
+          El Protocolo de información de enrutamiento (RIP) se basa en los recuentos de saltos para determinar la ruta más corta entre las redes. El RIP es un protocolo heredado que nadie utiliza hoy en día porque no se adapta bien a la implementación de redes más grandes.
+          <br>
+          <br>
+          Protocolo Open Shortest Path First (abrir la ruta más corta primero)
+          El protocolo Open Shortest Path First (OSPF) recopila información de todos los demás enrutadores del sistema autónomo para identificar la ruta más corta y rápida hacia el destino de un paquete de datos. Puede implementar OSPF mediante diversos algoritmos de enrutamiento o procesos informáticos.
+          <br>
+          <br>
+          Protocolos de puerta de enlace externa
+          El protocolo de puerta de enlace fronteriza (BGP) es el único protocolo de puerta de enlace externa.
+          <br>
+          <br>
+          Protocolo de puerta de enlace fronteriza
+          BGP define la comunicación a través de Internet. Internet es una gran colección de sistemas autónomos, todos conectados entre sí. Cada sistema autónomo tiene un número de sistema autónomo (ASN) que obtiene al registrarse en la Autoridad de números asignados de Internet.
+          <br>
+          <br>
+          BGP funciona mediante el seguimiento de los ASN más cercanos y la asignación de las direcciones de destino a sus respectivos ASN.
+          <br>
+          <br>
+          <h2>¿Qué son los algoritmos de enrutamiento?</h2>
+          <br>
+          Los algoritmos de enrutamiento son programas de software que implementan diferentes protocolos de enrutamiento. Funcionan mediante la asignación de un número de costo a cada enlace; el número de costo se calcula con varias métricas de red. Cada enrutador intenta reenviar el paquete de datos al siguiente mejor enlace con el costo más bajo.
+          <br>
+          <br>
+          A continuación se presentan algunos ejemplos de algoritmos.
+          <br>
+          <br>
+          Enrutamiento vector distancia
+          El algoritmo de enrutamiento vector distancia requiere que todos los enrutadores se actualicen periódicamente entre sí sobre la información de la mejor ruta que hayan encontrado. Cada enrutador envía información sobre la evaluación actual del costo total a todos los destinos conocidos.
+          <br>
+          <br>
+          Finalmente, cada enrutador de la red descubre la mejor información de ruta para todos los destinos posibles.
+          <br>
+          <br>
+          Enrutamiento por estado del enlace
+          En el enrutamiento por estado del enlace, cada enrutador descubre todos los demás enrutadores de la red. Con esta información, un enrutador crea un mapa de la red completa y luego calcula la ruta más corta para cualquier paquete de datos.
+          <br>
+          <br>
+          <h2>¿Cómo ha evolucionado el enrutamiento?</h2>
+          <br>
+          El enrutamiento ha evolucionado para cumplir con los requisitos de los avances en la tecnología de redes. El enrutamiento ya no se trata solo de cambiar paquetes de datos entre sistemas autónomos e Internet.
+          <br>
+          <br>
+          Ahora tenemos una infraestructura en la nube con recursos de computación y hardware alojados por proveedores de servicios en la nube externos. Estos recursos en la nube están conectados virtualmente para crear una red virtual de recursos que las empresas pueden utilizar para alojar y ejecutar aplicaciones. Muchas organizaciones ahora utilizan redes híbridas formadas por redes locales con hardware interno y redes en la nube. Los enrutadores deben dirigir el tráfico entre estas redes internas, Internet y la nube.
+          <br>
+          <br>
+          <h2>¿Qué es el enrutamiento en la nube?</h2>
+          <br>
+          El enrutamiento en la nube administra dinámicamente las conexiones entre dos redes de nube virtual o entre una red en la nube y una red local mediante el protocolo de puerta de enlace fronteriza (BGP). El enrutamiento en la nube se adapta automáticamente a las condiciones cambiantes de la red en la nube.  Un enrutador en la nube, un software que virtualiza las funciones de un enrutador, facilita el enrutamiento en la nube.
+          <br>
+          <br>
+          <h2>¿Qué es el enrutamiento de DNS?</h2>
+          <br>
+          El DNS, o sistema de nombres de dominio, traduce los nombres de dominios aptos para lectura humana (por ejemplo, www.amazon.com) a direcciones IP aptas para lectura por parte de máquinas (por ejemplo, 192.0.2.44). Los datos que asignan esta información de nombre a la información de la máquina se almacenan por separado en los servidores de DNS. Antes de enviar datos a cualquier sitio web, los enrutadores se deben comunicar con el servidor de DNS para identificar la dirección exacta de la máquina para los paquetes de datos.
+          <br>
+          <br>
+          La comunicación con el servidor de DNS se puede convertir en un cuello de botella, especialmente cuando muchos usuarios desean visitar un sitio web al mismo tiempo. El enrutamiento de DNS se refiere a las diversas estrategias y algoritmos de enrutamiento que administran la comunicación con el servidor de DNS. Diversas estrategias, como el enrutamiento basado en la latencia y el enrutamiento basado en la ubicación geográfica, ayudan a administrar la carga de comunicación del servidor de DNS.
+          <br>
+          <br>
+        </p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="PDF">
+        <a href="../archivos/Protocolos de enrutamiento.pdf">PDF INFO Protocolos de enrutamiento</a>
+      </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
