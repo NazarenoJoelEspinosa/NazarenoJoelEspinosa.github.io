@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Red</title>
+    <link rel="stylesheet" href="../css/Style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../Index.html">Indice</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Laboratorio de Hardware
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./VPN.html">VPN</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./Dispositivos.html">Dispositivos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./Protocolos de comunicacion.html">Protocolos de comunicacion</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./Comandos.html">Comandos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./Protocolos de enrutamiento.html">Protocolos de enrutamiento</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="Texto">
+        <h1>Dispositivos</h1>
+        <p>
+          <h2>Router</h2>
+          <br>
+          <h4>Que es?</h4>
+          Es un dispositivo que permite interconectar redes con distinto prefijo en su dirección IP. Su función es la de establecer la mejor ruta que destinará a cada paquete de datos para llegar a la red y al dispositivo de destino. Es bastante utilizado para conectarse a Internet ya que conecta la red de nuestro hogar, oficina o cualquier red a la red de nuestro proveedor de este servicio. La mayoría de los rúteres que se utilizan para el hogar y oficinas tienen incorporadas otras funciones adicionales al enrutador, como por ejemplo: punto de acceso inalámbrico, que permite crear y conectarse a una red Wifi; módem, que convierte las señales analógicas a digitales y viceversa; Conmutador, que conecta varios dispositivos a través de cable, creando una red local. 
+          <br>
+          <br>
+          <h4>Cual es su funcionamiento?</h4>
+          El funcionamiento básico de un enrutador o encaminador, como se deduce de su nombre, consiste en enviar los paquetes de red por el camino o ruta más adecuada en cada momento. Para ello almacena los paquetes recibidos y procesa la información de origen y destino que poseen. Con arreglo a esta información reenvía los paquetes a otro encaminador o bien al anfitrión final, en una actividad que se denomina 'encaminamiento'. Cada encaminador se encarga de decidir el siguiente salto en función de su tabla de reenvío o tabla de encaminamiento, la cual se genera mediante protocolos que deciden cuál es el camino más adecuado o corto, como protocolos basado en el algoritmo de Dijkstra. 
+          <br>
+          <br>
+  
+
+          Por ser los elementos que forman la capa de red, tienen que encargarse de cumplir las dos tareas principales asignadas a la misma: 
+          <br>
+            
+          <ul>
+            <li>
+              Reenvío de paquetes: cuando un paquete llega al enlace de entrada de un encaminador, este tiene que pasar el paquete al enlace de salida apropiado. Una característica importante de los encaminadores es que no difunden tráfico difusivo. 
+            </li>
+            <li>
+              Encaminamiento de paquetes: mediante el uso de algoritmos de encaminamiento tiene que ser capaz de determinar la ruta que deben seguir los paquetes a medida que fluyen de un emisor a un receptor. 
+            </li>
+          </ul>
+          <br>
+
+      
+          Por tanto, debemos distinguir entre reenvío y encaminamiento. Reenvío consiste en coger un paquete en la entrada y enviarlo por la salida que indica la tabla, mientras que por encaminamiento se entiende el proceso de hacer esa tabla. 
+          <br>
+          <br>
+          <h3>Arquitectura física</h3>
+          <br>
+          En un enrutador se pueden identificar cuatro componentes: 
+          <br>
+          <br>
+          <ul>
+            <li>
+              Puertos de entrada: realiza las funciones de la capa física consistentes en la terminación de un enlace físico de entrada a un encaminador; realiza las funciones de la capa de enlace de datos necesarias para interoperar con las funciones de la capa de enlace de datos en el lado remoto del enlace de entrada; realiza también una función de búsqueda y reenvío de modo que un paquete reenviado dentro del entramado de conmutación del encaminador emerge en el puerto de salida apropiado. 
+            </li>
+            <br>
+            <li>
+              Entrada de conmutación: conecta los puertos de entrada del enrutador a sus puertos de salida. 
+            </li>
+            <br>
+            <li>
+              Puertos de salida: almacena los paquetes que le han sido reenviados a través del puerto de conmutación y los transmite al enlace de salida. Realiza entonces la función inversa de la capa física y de la capa de enlace que el puerto de entrada. 
+            </li>
+            <br>
+            <li>
+              Procesador de encaminamiento: ejecuta los protocolos de ip encaminamiento, mantiene la información de encaminamiento y las tablas de reenvío y realiza funciones de gestión de red dentro del enrutador. 
+            </li>
+          </ul>
+          <br>
+          <br>
+          <h3>Tipos de enrutamiento </h3>
+          <br>
+          Tanto los enrutadores como los anfitriones guardan una tabla de enrutamiento. El daemon de enrutamiento de cada sistema actualiza la tabla con todas las rutas conocidas. El núcleo del sistema lee la tabla de enrutamiento antes de reenviar paquetes a la red local. La tabla de enrutamiento enumera las direcciones IP de las redes que conoce el sistema, incluida la red local predeterminada del sistema. La tabla también enumera la dirección IP de un sistema de portal para cada red conocida. El portal es un sistema que puede recibir paquetes de salida y reenviarlos un salto más allá de la red local. 
+          <br>
+          <br>
+          <h4>Enrutamiento estático </h4>
+          <br>
+          El enrutamiento estático es un método de enrutamiento en el cual un administrador de red configura manualmente la tabla de enrutamiento de un enrutador. Esto implica especificar de forma estática las rutas y destinos de red que el enrutador utilizará para reenviar el tráfico a través de la red. En el enrutamiento estático, las rutas se configuran directamente en el enrutador y no cambian a menos que el administrador de red realice cambios manuales en la configuración. 
+          <br>
+          <br>
+          <h5>Determinación de enrutamiento </h5>
+          <br>
+          La información de enrutamiento que el encaminador aprende desde sus fuentes de enrutamiento se coloca en su propia tabla de enrutamiento. El encaminador se vale de esta tabla para determinar los puertos de salida que debe utilizar para retransmitir un paquete hasta su destino. La tabla de enrutamiento es la fuente principal de información del enrutador acerca de las redes. Si la red de destino está conectada directamente, el enrutador ya sabrá el puerto que debe usar para reenviar los paquetes. Si las redes de destino no están conectadas directamente, el encaminador debe aprender y calcular la ruta más óptima a usar para reenviar paquetes a dichas redes. La tabla de enrutamiento se constituye mediante uno de estos dos métodos o ambos: 
+          <br>
+          <ul>
+            <li>
+              Manualmente, por el administrador de la red. 
+            </li>
+            <li>
+              A través de procesos dinámicos que se ejecutan en la red. 
+            </li>
+          </ul>
+          <br>
+          <br>
+          <h4>Rutas estáticas </h4>
+          <br>
+          Las rutas estáticas se definen administrativamente y establecen rutas específicas que han de seguir los paquetes para pasar de un puerto de origen hasta un puerto de destino. Se establece un control preciso de enrutamiento según los parámetros del administrador. 
+          <br>
+          <br>
+          Las rutas estáticas por defecto especifican una puerta de enlace de último recurso, a la que el enrutador debe enviar un paquete destinado a una red que no aparece en su tabla de enrutamiento, es decir, se desconoce. 
+          <br>
+          <br>
+          Las rutas estáticas se utilizan habitualmente en enrutamientos desde una red hasta una red de conexión única, ya que no existe más que una ruta de entrada y salida en una red de conexión única, evitando de este modo la sobrecarga de tráfico que genera un protocolo de enrutamiento. La ruta estática se configura para conseguir conectividad con un enlace de datos que no esté directamente conectado al enrutador. Para conectividad de extremo a extremo, es necesario configurar la ruta en ambas direcciones. Las rutas estáticas permiten la construcción manual de la tabla de enrutamiento. 
+          <br>
+          <br>
+          <h4>Enrutamiento dinámico </h4>
+          <br>
+          El enrutamiento dinámico le permite a los encaminadores ajustar, en tiempo real, los caminos utilizados para transmitir paquetes IP. Cada protocolo posee sus propios métodos para definir rutas (camino más corto, utilizar rutas publicadas por pares, etc.). 
+          <br>
+          <br>
+          <h5>Algoritmos de enrutamiento dinámico </h5>
+          <br>
+          <ul>
+            <li>
+              Vector a distancia: Cada enrutador cuenta con una tabla donde se almacena la mejor distancia y la línea de comunicación que se debe utilizar para llegar al origen. 
+            </li>
+            <li>
+              Estado - Cliente: Descubre a los vecinos y obtiene las direcciones de red de estas. 
+            </li>
+          </ul>
+          <br>
+          <br>
+          <h4>Introducción a RIP </h4>
+          <br>
+          RIP (Protocolo de Información de Enrutamiento) es uno de los protocolos de enrutamiento más antiguos utilizados por dispositivos basados en IP. Su implementación original fue para el protocolo Xerox a principios de los 80. Ganó popularidad cuando se distribuyó con UNIX como protocolo de enrutamiento para esa implementación TCP/IP. RIP es un protocolo de vector de distancia que utiliza la cuenta de saltos de enrutamiento como métrica. La cuenta máxima de saltos de RIP es 15. Cualquier ruta que exceda de los 15 saltos se etiqueta como inalcanzable al establecerse la cuenta de saltos en 16. En RIP la información de enrutamiento se propaga de un enrutador a los otros vecinos por medio de una difusión de IP usando protocolo UDP y el puerto 520. 
+          <br>
+          <br>
+          <h5>Proceso de configuración de RIP </h5>
+          <br>
+          El protocolo RIP versión uno es un protocolo de enrutamiento con clase que no admite la publicación de la información de la máscara de red. El protocolo RIP versión 2 es un protocolo sin clase que admite CIDR, VLSM, resumen de rutas y seguridad mediante texto simple y autenticación MD5.
+        </p>
+        <h2>Switch</h2>
+        <br>
+        <h4>Que es?</h4>
+        Los switches son piezas de construcción clave para cualquier red. Conectan varios dispositivos, como computadoras, access points inalámbricos, impresoras y servidores; en la misma red dentro de un edificio o campus. Un switch permite a los dispositivos conectados compartir información y comunicarse entre sí. 
+        <br>
+        <br>
+        <h3>Switches no administrados </h3>
+        <br>
+        Un switch de red no administrado está diseñado para que pueda simplemente conectarlo y funcione, sin necesidad de configuración. Los switches no administrados se usan generalmente para conectividad básica. En general, se verán en redes domésticas o donde sea que se necesiten unos cuantos puertos más, como en su escritorio, en un laboratorio o en una sala de conferencias. 
+        <br>
+        <br>
+        <h3>Switches administrados </h3>
+        <br>
+        Los switches administrados le ofrecen mayor seguridad y más funciones y flexibilidad, dado que puede configurarlos para que se adapten a su red. Con este mayor control, puede proteger mejor su red y mejorar la calidad del servicio para los que acceden a la red. 
+        <br>
+        <br>
+        <h3>Concentradores y switches de red </h3>
+        <br>
+        Un concentrador de red es un punto de conexión central para los dispositivos de una red de área local, o LAN. Pero existe un límite para la cantidad de ancho de banda que los usuarios pueden compartir en una red basada en concentradores. Cuantos más dispositivos se agreguen al concentrador de red, más tiempo tardarán los datos en llegar a su destino. Un switch evita estas y otras limitaciones de los concentradores de red. 
+        <br>
+        <br>
+        Una gran red puede incluir varios switches, que conectan diferentes grupos de sistemas informáticos entre sí. En general, estos switches están conectados a un router que permite a los dispositivos conectados acceder a Internet. 
+        <br>
+        <br>
+        <h3>¿Cómo configurar un switch de red con un router? </h3>
+        <br>
+        Es posible que deba aumentar la cantidad de puertos que pueden conectarse al router, para poder configurar un switch de red para conectar con el router. Su switch de red se conecta al router a través de uno de los puertos del router, y amplía la cantidad de dispositivos de la red de su oficina, como computadoras de escritorio, impresoras, computadoras portátiles, etc. que tienen una conexión por cable a Internet. 
+        <br>
+        <br>
+        <h2>Access Point </h2>
+        <h4>Que es?</h4>
+        Un access point inalámbrico (WAP) es un dispositivo de red que permite que los dispositivos con capacidad inalámbrica se conecten a una red cableada. Es más simple y fácil instalar WAP para conectar todas las computadoras o los dispositivos de la red que usar cables. 
+        <br>
+        <br>
+        <h3>Tipos comunes de configuraciones de access point </h3>
+        <br>
+        <br>
+        <h4>Access point de raíz </h4>
+        <br>
+        En esta configuración, un access point se conecta directamente a una LAN cableada, lo que proporciona un punto de conexión para usuarios inalámbricos. Si hay más de un access point conectado a la LAN, los usuarios pueden pasar de una zona de las instalaciones a otra sin perder la conexión de red. 
+        <br>
+        <br>
+        <h4>Access point repetidor </h4>
+        <br>
+        Un access point o extensión de malla puede configurarse como repetidora independiente para ampliar el alcance de la infraestructura o superar un obstáculo que bloquea las comunicaciones por radio. 
+        <br>
+        La repetidora reenvía el tráfico entre los usuarios inalámbricos y la red cableada, mediante el envío de datos a otra repetidora o a un access point conectado a la red cableada. Los datos se envían por la ruta que proporciona el mejor rendimiento para el cliente. 
+        <br>
+        <br>
+        <h4>Puentes </h4>
+        <br>
+        Pueden configurarse access points como puentes de raíz o no de raíz a fin de unir varias redes. Un access point en este rol establecerá un enlace inalámbrico con un puente no de raíz. El tráfico se transmite por el enlace inalámbrico a la red cableada. 
+        <br>
+        <br>
+        <h4>Puente de grupo de trabajo </h4>
+        <br>
+        Los access points que están en modo de puente de grupos de trabajo pueden "asociarse" a otros access points como clientes y proporcionar conexiones de red para los dispositivos conectados a los puertos Ethernet. 
+        <br>
+        <br>
+        <h4>Unidad central en una red totalmente inalámbrica </h4>
+        <br>
+        En una red totalmente inalámbrica, un access point actúa como una unidad de raíz independiente. No está conectada a una LAN cableada. Por el contrario, el access point funciona como concentrador que conecta a todas las estaciones juntas. Sirve como punto central de las comunicaciones, lo que aumenta el alcance de comunicación de los usuarios inalámbricos. 
+        <br>
+        <br>
+        <h2>Servidor</h2>
+        <br>
+        <h4>Que es?</h4>
+        En computación, se conoce como servidor (del inglés server) a un computador que forma parte de una red informática y provee determinados servicios al resto de los computadores de la misma, llamados a su vez estaciones o clientes. Dicho computador debe contar con una aplicación específica capaz de atender las peticiones de los distintos clientes y brindarles respuesta oportuna, por lo que en realidad dentro de una misma computadora física (hardware) pueden funcionar varios servidores simultáneos (software), siempre y cuando cuenten con los recursos logísticos necesarios. 
+        <br>
+        <br>
+        <h4>Para que sirve?</h4>
+        Los servidores, como hemos dicho, son los encargados de atender las solicitudes de los clientes de una red determinada, y administrar los recursos disponibles a la misma para que cada cliente pueda acceder a la información o a los periféricos que necesita 
+        <br>
+        <br>
+        <h3>Los servidores pueden tener funciones muy distintas, tales como:</h3>
+        <br>
+        <ul>
+          <li>Servidores de archivos. Almacenan los ficheros o archivos de información y alimentan con ellos a una red. 
+          </li>
+          <br>
+          <li>
+            Servidores de Directorio Activo/Dominio. Administran la información relacionada con la red, sus usuarios, equipos y grupos internos. 
+          </li>
+          <br>
+          <li>
+            Servidor de impresión. Gestiona un conjunto de impresoras disponibles para una red, otorgando acceso a ellas y administrando la cola de impresión. 
+          </li>
+          <br>
+          <li>
+            Servidor de correo. Gestiona el flujo de correo electrónico entre, desde y hacia los clientes de una red, enviando y recibiendo mensajes y almacenando el historial de los mismos. 
+          </li>
+          <br>
+          <li>
+            Servidor de Proxy. Su rol es de respaldo, almacenando durante un tiempo y en memoria caché una copia de las páginas web disponibles para la red, para acelerar el acceso a las mismas o permitir la recuperación de datos si la original se cae. 
+          </li>
+          <br>
+          <li>
+            Servidor web. Almacena el contenido necesario para una o varias páginas web y administra el acceso ordenado al mismo, para que los navegadores de los clientes puedan “renderizar” un sitio web. 
+          </li>
+          <br>
+          <li>
+            Servidor DNS. Almacena la información necesaria para asociar un nombre de dominio con una serie de direcciones IP de los equipos vinculados a ella (sus servidores web). 
+          </li>
+          <br>
+          <li>
+            Servidor DHCP. Encargado de asignar las direcciones IP dinámicas (cambiantes) a los clientes que se conectan a una red. 
+          </li>
+          <br>
+          <li>
+            Servidor FTP. Almacena información puntual de los usuarios y permite el acceso privado a la misma entre equipos. 
+          </li>
+          <br>
+          <li>
+            Servidor de juego. Aquellos específicamente dedicados a almacenar información para que los clientes puedan acceder al mismo tiempo a un programa recreativo (juegos de video masivos, generalmente). 
+          </li>
+          br
+        </ul>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="PDF">
+        <a href="../archivos/Dispositivos.pdf">PDF INFO Dispositivos</a>
+      </div>
+      
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
